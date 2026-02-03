@@ -1,7 +1,9 @@
 **Experiment No. 4**
 
 Name: Pranav Menon
+
 PRN No.: 25070123085
+
 Batch: ENTC - B1
 
 **Aim:** To study Sets in Python and understand set operations, methods, and their practical applications.
@@ -12,6 +14,7 @@ Batch: ENTC - B1
 A set is an unordered collection of unique elements in Python. Sets are defined using curly braces {} or the set() constructor.
 
 Key Characteristics:
+
 • Unordered - Elements have no defined order or index position
 
 • Unique elements - Duplicate values are automatically removed
