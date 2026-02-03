@@ -79,6 +79,7 @@ Syntax: set_name.update([element1, element2, element3])
 **6) Removing Elements from a Set**
 
 Method 1: remove(element)
+
 • Removes the specified element from the set
 
 • Raises KeyError if element does not exist
@@ -86,6 +87,7 @@ Method 1: remove(element)
 • Use when element existence is certain
 
 Method 2: discard(element)
+
 • Removes the specified element from the set
 
 • Does not raise an error if element does not exist
