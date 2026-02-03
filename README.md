@@ -59,6 +59,7 @@ Syntax: element in set_name
 **5) Adding Elements to a Set**
 
 Method 1: add(element)
+
 • Adds a single element to the set
 
 • If element already exists, no change occurs
@@ -68,6 +69,7 @@ Method 1: add(element)
 Syntax: set_name.add(element)
 
 Method 2: update(iterable)
+
 • Adds multiple elements from an iterable (list, tuple, set, etc.)
 
 • Can add elements from multiple iterables simultaneously
