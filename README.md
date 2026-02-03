@@ -40,6 +40,7 @@ Output: {'banana', 'cherry', 'apple'}
 **3) Boolean Values in Sets**
 
 Key Points:
+
 • True is considered equivalent to 1
 
 • False is considered equivalent to 0
@@ -59,13 +60,16 @@ Syntax: element in set_name
 
 Method 1: add(element)
 • Adds a single element to the set
+
 • If element already exists, no change occurs
+
 • Returns None
 
 Syntax: set_name.add(element)
 
 Method 2: update(iterable)
 • Adds multiple elements from an iterable (list, tuple, set, etc.)
+
 • Can add elements from multiple iterables simultaneously
 
 Syntax: set_name.update([element1, element2, element3])
