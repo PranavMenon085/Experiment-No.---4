@@ -13,9 +13,13 @@ A set is an unordered collection of unique elements in Python. Sets are defined 
 
 Key Characteristics:
 • Unordered - Elements have no defined order or index position
+
 • Unique elements - Duplicate values are automatically removed
+
 • Mutable - Elements can be added or removed after creation
+
 • Iterable - Can be traversed using loops
+
 • No indexing - Cannot access elements by position
 
 Syntax:
@@ -34,7 +38,9 @@ Output: {'banana', 'cherry', 'apple'}
 
 Key Points:
 • True is considered equivalent to 1
+
 • False is considered equivalent to 0
+
 • If both a boolean and its numeric equivalent exist, only the first occurrence is retained
 
 Example:
@@ -45,7 +51,6 @@ Output: {True, 2, 'cherry', 'apple', 'banana'}
 The 'in' keyword is used to check whether an element exists in a set. It returns True if the element is found, otherwise False.
 
 Syntax: element in set_name
-Time Complexity: O(1) - Constant time (highly efficient)
 
 **5) Adding Elements to a Set**
 
@@ -66,12 +71,16 @@ Syntax: set_name.update([element1, element2, element3])
 
 Method 1: remove(element)
 • Removes the specified element from the set
+
 • Raises KeyError if element does not exist
+
 • Use when element existence is certain
 
 Method 2: discard(element)
 • Removes the specified element from the set
+
 • Does not raise an error if element does not exist
+
 • Preferred when element existence is uncertain
 
 Detailed Comparison: discard() vs remove()
@@ -95,6 +104,7 @@ my_set.remove("orange")   # Raises KeyError: 'orange'
 
 When to Use:
 • Use discard() when removing elements that might not exist (safer approach)
+
 • Use remove() when you want to ensure the element exists (explicit error detection)
 
 **7) Set Operations**
@@ -125,15 +135,20 @@ A frozenset is an immutable version of a set. Once created, elements cannot be a
 
 Key Characteristics:
 • Immutable - Cannot be modified after creation
+
 • Can be used as dictionary keys (unlike regular sets)
+
 • Can be elements of other sets
+
 • Supports all set operations except modification methods
 
 Syntax: frozen = frozenset([element1, element2, element3])
 
 Use Cases:
 • When a constant set of values is required
+
 • As dictionary keys
+
 • As elements within another set
 
 **ALGORITHMS**
@@ -228,12 +243,19 @@ Procedure:
 **SET METHODS SUMMARY**
 
 • add(element) - Adds a single element; no error if element already exists
+
 • update(iterable) - Adds multiple elements; no error if duplicates present
+
 • remove(element) - Removes specified element; raises KeyError if not found
+
 • discard(element) - Removes specified element; no error if not found
+
 • union() or | - Returns the union of sets
+
 • intersection() or & - Returns elements common to all sets
+
 • difference() or - - Returns elements in the first set but not in the second
+
 • symmetric_difference() or ^ - Returns elements in either set but not in both
 
 **PRACTICAL APPLICATIONS OF SETS**
@@ -250,16 +272,23 @@ Procedure:
 **ADVANTAGES OF SETS**
 
 • Fast membership testing with O(1) time complexity
+
 • Automatic removal of duplicate values without manual intervention
+
 • Built-in support for mathematical set operations
+
 • Memory efficient storage of unique elements only
+
 • Flexible structure allowing easy addition and removal of elements
 
 **LIMITATIONS OF SETS**
 
 • Unordered nature prevents reliance on element order
+
 • Absence of indexing prevents positional access to elements
+
 • Cannot contain mutable elements such as lists or dictionaries
+
 • Cannot store duplicate values by design
 
 **CONCLUSION**
