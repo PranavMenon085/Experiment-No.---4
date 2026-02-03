@@ -201,8 +201,8 @@ Objective: Determine members common to both clubs, members unique to each club, 
 Procedure:
 1. Start
 2. Create two sets representing members of each club:
-   - Cricket_Club = {member1, member2, ...}
-   - Football_Club = {member1, member2, ...}
+   - Cricket_Club = {member1, member2, member3, member4, member5}
+   - Football_Club = {member1, member2, member3, member4, member5}
 3. Find common members using intersection:
    Common = Cricket_Club & Football_Club
 4. Find members unique to both clubs using symmetric difference:
