@@ -223,11 +223,6 @@ Step 7: Find intersection using intersection() method ----> Alternate Method
    - Source: Built-in set method (no import required)
    - Command: print("The Subjects Common to all the three Student is : " , Student1.intersection(Student2,Student3))
 
-Step 8: Display result using intersection() method
-   - Command: print("The Subjects Common to all the three Student is : ", Student1.intersection(Student2, Student3))
-   - Function: print() - Built-in function for console output
-   - Source: Built-in Python function (no import required)
-
 Step 9: Stop
    - End the algorithm
 
