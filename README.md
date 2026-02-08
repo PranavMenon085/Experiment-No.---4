@@ -216,11 +216,12 @@ Step 6: Display result using & operator
    - Command: print("The Subjects Common to all the three Student is : ", Student1 & Student2 & Student3)
    - Function: print() - Built-in function for console output
    - Source: Built-in Python function (no import required)
-
-Step 7: Find intersection using intersection() method (Method 2)
+   
+Step 7: Find intersection using intersection() method ----> Alternate Method
    - Command: Student1.intersection(Student2, Student3)
    - Function: intersection() - Built-in set method that accepts multiple sets as arguments
    - Source: Built-in set method (no import required)
+   - Command: print("The Subjects Common to all the three Student is : " , Student1.intersection(Student2,Student3))
 
 Step 8: Display result using intersection() method
    - Command: print("The Subjects Common to all the three Student is : ", Student1.intersection(Student2, Student3))
