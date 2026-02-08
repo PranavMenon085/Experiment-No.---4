@@ -369,4 +369,4 @@ Step 7: Stop
 
 CONCLUSION
 
-The study of sets in Python was completed successfully. Various set operations including union, intersection, difference, and symmetric difference were demonstrated. The practical applications of sets in removing duplicates, membership testing, and data manipulation were observed and verified through implementation.
+The study of sets in Python was completed successfully.
