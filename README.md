@@ -12,83 +12,65 @@ THEORY:
 
 1) Introduction to Sets
 
-A set is an unordered collection of unique elements in Python. Sets are defined using curly braces {} or the set() constructor.
+A set in Python is an unordered collection of unique elements. Sets are useful when duplicate values are not allowed and when fast membership testing is required. They are defined using curly braces {} or the set() constructor.
 
 Key Characteristics:
-
-• Unordered - Elements have no defined order or index position
-
-• Unique elements - Duplicate values are automatically removed
-
-• Mutable - Elements can be added or removed after creation
-
-• Iterable - Can be traversed using loops
-
-• No indexing - Cannot access elements by position
+• Unordered – Elements have no fixed order or index position.
+• Unique – Duplicate values are automatically removed.
+• Mutable – Elements can be added or removed after creation.
+• Iterable – Can be traversed using loops.
+• No indexing – Elements cannot be accessed by position.
 
 Syntax:
-
 my_set = {element1, element2, element3}
+my_set = set([element1, element2, element3])
 
 2) Duplicate Handling in Sets
 
-Sets automatically eliminate duplicate values. When a set is created with duplicate elements, only one instance of each unique element is retained.
+Sets automatically eliminate duplicate values. When duplicates are included during creation, only one instance of each unique element is retained.
 
 Example:
-
-Input: thisset = {"apple", "banana", "cherry", "apple"}
+thisset = {"apple", "banana", "cherry", "apple"}
 Output: {'banana', 'cherry', 'apple'}
 
 3) Boolean Values in Sets
 
- True is considered equivalent to 1 , False is considered equivalent to 0 and If both a boolean and its numeric equivalent exist, only the first occurrence is retained
+In sets, True is treated as equivalent to 1, and False as equivalent to 0. If both a boolean and its numeric equivalent exist, only the first occurrence is retained.
 
 Example:
-
-Input: thisset = {"apple", "banana", True, 1, 2}
-Output: {True, 2, 'cherry', 'apple', 'banana'}
+thisset = {"apple", "banana", True, 1, 2}
+Output: {True, 2, 'apple', 'banana'}
 
 4) Membership Testing
 
 The 'in' keyword is used to check whether an element exists in a set. It returns True if the element is found, otherwise False.
 
-Syntax: 
-
+Syntax:
 element in set_name
+
+Example:
+"apple" in thisset   # Returns True
 
 5) Adding Elements to a Set
 
-Method 1: add(element)
+Sets allow insertion of new elements using two methods:
+- add(element) → Adds a single element. If the element already exists, no change occurs.
+- update(iterable) → Adds multiple elements from an iterable (list, tuple, set, etc.).
 
-• Adds a single element to the set
-
-• If element already exists, no change occurs
-
-Syntax: 
-
+Syntax:
 set_name.add(element)
-
-• Adds multiple elements from an iterable (list, tuple, set, etc.)
-
-• Can add elements from multiple iterables simultaneously
-
-Syntax: 
-
 set_name.update([element1, element2, element3])
 
 6) Removing Elements from a Set
 
-Method 1: remove(element)
+Elements can be removed using:
+- remove(element) → Removes the specified element; raises KeyError if element does not exist.
+- discard(element) → Removes the specified element; does not raise an error if element is absent.
 
-• Removes the specified element from the set
-
-• Raises KeyError if element does not exist
-
-Method 2: discard(element)
-
-• Removes the specified element from the set
-
-• Does not raise an error if element does not exist
+Example:
+myset = {"apple", "banana", "cherry"}
+myset.remove("banana")
+myset.discard("orange")   # No error raised
 
 Detailed Comparison: discard() vs remove()
 
